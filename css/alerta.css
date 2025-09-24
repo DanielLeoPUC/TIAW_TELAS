@@ -13,14 +13,14 @@
       padding: 20px;
     }
     h1 {
-        color: chocolate;
+       color:#db500f;
     }
 
     h2 {
       text-align: center;
       font-size: 24px;
       margin-bottom: 20px;
-      color:#ff8080;
+      color:#db500f;
     }
 
     .alerta {
