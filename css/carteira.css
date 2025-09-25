@@ -12,7 +12,7 @@
 
  .bloco {
      background: #fff;
-     height: 800px;
+     height: 700px;
      padding: 20px;
      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
      border-radius: 30px;
@@ -28,14 +28,13 @@
      margin-bottom: 5px;
  }
 
- input,
- select,
- button {
+ input,select,button {
      width: 50%;
      padding: 10px;
      border: 1px solid #ccc;
      border-radius: 8px;
      margin: 20 px;
+     margin-right: 10px;
 
  }
 
@@ -54,7 +53,7 @@
 
  #editar {
      background-color: rgba(22, 37, 105, 0.863);
-     margin-left: 700px;
+     margin-left: 1000px;
  }
 
  button:hover {
@@ -68,7 +67,7 @@
  }
 
  th {
-     background: #fd1717c2;
+    background-color: rgba(206, 18, 18, 0.863);
      width: 300px;
  }
 

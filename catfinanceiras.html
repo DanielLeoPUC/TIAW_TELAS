@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/catfinanceiras.css">
+  <title>Categorias Financeiras</title>
+
+</head>
+<body>
+  <h1>Categorias</h1>
+  <div id="categorias">
+  <div id="pessoal">
+  <div class="bloco">
+     <h2> Categorias  pessoais</h2>
+    <form>
+      <div>
+        <label for="categoria">Nome da Categoria</label>
+        <input type="text" id="categoria" placeholder="Ex: Alimentação, Transporte, Salário">
+      </div>
+      <div>
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+          <option>Despesa</option>
+          <option>Receita</option>
+        </select>
+      </div>
+      <button  id="catpessoal"  type="submit">Adicionar Categoria pessoal</button>
+    </form>
+
+    <h3>Minhas Categorias</h3>
+    <ul>
+      <li>Alimentação <span class="tipo">(Despesa)</span></li>
+      <li>Salário <span class="tipo">(Receita)</span></li>
+      <li>Transporte <span class="tipo">(Despesa)</span></li>
+    </ul>
+  </div>
+  </div>
+
+  <div id="comercial">
+
+  <div class="bloco">
+      <h2> Categorias Comerciais</h2>
+    <form>
+      <div>
+        <label for="categoria">Nome da Categoria Pessoal</label>
+        <input type="text" id="categoria" placeholder="Ex: funcionários, Produtos, loja ">
+      </div>
+      <div>
+        <label for="tipo">Tipo</label>
+        <select id="tipo">
+          <option>Despesa</option>
+          <option>Receita</option>
+        </select>
+      </div>
+      <button  id="catcomercial"  type="submit">Adicionar Categoria comercial</button>
+    </form>
+
+    <h3>Minhas Categorias</h3>
+    <ul>
+      <li>Aluguel loja <span class="tipo">(Despesa)</span></li>
+      <li>Funcionários<span class="tipo">(Receita)</span></li>
+      <li>Produtos <span class="tipo">(Despesa)</span></li>
+    </ul>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
