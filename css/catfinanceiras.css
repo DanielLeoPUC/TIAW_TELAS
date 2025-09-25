@@ -2,7 +2,10 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 20px;
-      background: #032718;
+      background-color: #c2cac4f5;
+  }
+  .orcamento {
+    box-sizing: border-box;
   }
 
   #categorias {
@@ -26,7 +29,8 @@
 
   h1 {
       color: aliceblue;
-      background-color: #540b99;
+        background-color: rgba(163, 32, 32, 0.863);
+
       width: 50%;
       border-radius: 30px;
       margin: 0 auto;
@@ -53,9 +57,6 @@
       box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
 
-  .form-group {
-      margin-bottom: 15px;
-  }
 
   label {
       display: block;
@@ -116,3 +117,12 @@
       font-size: 0.9em;
       color: #555;
   }
+   #voltar {
+     background-color: #97280dd5;
+      color: aliceblue;
+      width: 100px;
+      padding: 10px;
+      float: right;
+      margin: 20px;
+      border-radius: 30px;
+ }

@@ -2,7 +2,7 @@
      font-family: Arial, sans-serif;
      margin: 0;
      padding: 100px;
-     background-color: #0a2010f5;
+      background-color: #f0f0f0;
  }
 
  h2 {
@@ -58,6 +58,9 @@
 
  button:hover {
      background: #212f80;
+ }
+ #adicionarconta{
+     background-color: #540b99;
  }
 
  table {

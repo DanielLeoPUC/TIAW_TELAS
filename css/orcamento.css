@@ -1,0 +1,74 @@
+ body {
+     font-family: Arial, sans-serif;
+
+     background-color: #c2cac4f5;
+
+     padding: 20px;
+ }
+ .orcamento {
+    background-color: rgba(22, 37, 105, 0.863);
+    border-radius: 30px;
+ }
+
+ h2,h3 {
+     color: #0c0c0c;
+     background-color: #f0f0f0;
+     text-align: center;
+     margin: 10px auto;
+ }
+
+
+ label {
+     display: block;
+     font-weight: bold;
+     background-color: #f0f0f0;
+     height: max-content;
+
+
+ }
+
+ input,select,button {
+     width: 100%;
+     border: 1px solid #ccc;
+ }
+ #definirOrcamento {
+    width: 800px;
+ }
+ 
+
+ button {
+     background-color: rgba(163, 32, 32, 0.863);
+     cursor: pointer;
+     font-weight: bold;
+   
+ }
+
+ button:hover {
+     background-color: rgba(163, 32, 32, 0.863);
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 20px;
+ }
+
+ th,
+ td {
+     padding: 10px;
+     text-align: left;
+     background: #f0f0f0;
+ }
+
+ th {
+     background: #f0f0f0;
+ }
+ #voltar {
+     background-color: #6b1f0d;
+      color: aliceblue;
+      width: 100px;
+      padding: 10px;
+      float: right;
+      margin: 20px;
+      border-radius: 30px;
+ }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/orcamento.css">
+  <title>Orçamento</title>
+
+</head>
+<body>
+
+  <div class="orcamento">
+    <form>
+          <h2>Orçamento</h2>
+      <div>
+        <label>Categoria</label>
+        <select>
+          <option>Alimentação</option>
+          <option>Transporte</option>
+          <option>Lazer</option>
+          <option>Saúde</option>
+        </select>
+      </div>
+      <div>
+        <label>Limite Mensal</label>
+        <input  type="number" placeholder="R$ 0,00">
+      </div>
+      <button type="submit">Definir Orçamento</button>
+    </form>
+    </div>
+
+    <h3>Orçamentos Definidos</h3>
+    <table>
+      <tr><th>Categoria</th><th>Limite</th><th>Gasto Atual</th></tr>
+      <tr><td>Alimentação</td><td>R$ 1.000,00</td><td>R$ 600,00</td></tr>
+      <tr><td>Transporte</td><td>R$ 400,00</td><td>R$ 200,00</td></tr>
+    </table>
+     <button  id="voltar"  type="submit">voltar</button>
+  
+</body>
+</html>
