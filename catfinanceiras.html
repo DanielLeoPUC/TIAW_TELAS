@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,21 @@
   <title>Categorias Financeiras</title>
 
 </head>
-<body>
-  <h1>Categorias</h1>
-  <div id="categorias">
-  <div id="pessoal">
-  <div class="bloco">
-     <h2> Categorias  pessoais</h2>
-    <form>
-      <div>
-        <label for="categoria">Nome da Categoria</label>
-        <input type="text" id="categoria" placeholder="Ex: Alimentação, Transporte, Salário">
-      </div>
-      <div>
-        <label for="tipo">Tipo</label>
-        <select id="tipo">
-          <option>Despesa</option>
-          <option>Receita</option>
-        </select>
-      </div>
-      <button  id="catpessoal"  type="submit">Adicionar Categoria pessoal</button>
-    </form>
 
+<body>
+  <div class="container-principal">
+  <div class="container" id="pessoal">
+    <h2> Categorias pessoais</h2>
+    <form>
+      <label class="nomeCat" for="categoria">Nome da categoria pessoal:</label>
+      <input type="text" id="categoria" placeholder="Ex: Alimentação, Transporte, Salário">
+      <label for="tipo">Tipo</label>
+      <select id="tipo">
+        <option>Despesa</option>
+        <option>Receita</option>
+      </select>
+    </form>
+    <button id="catpessoal" type="submit">Adicionar Categoria pessoal:</button>
     <h3>Minhas Categorias</h3>
     <ul>
       <li>Alimentação <span class="tipo">(Despesa)</span></li>
@@ -35,27 +30,19 @@
       <li>Transporte <span class="tipo">(Despesa)</span></li>
     </ul>
   </div>
-  </div>
 
-  <div id="comercial">
-
-  <div class="bloco">
-      <h2> Categorias Comerciais</h2>
+  <div class="container" id="comercial">
+    <h2> Categorias Comerciais</h2>
     <form>
-      <div>
-        <label for="categoria">Nome da Categoria Pessoal</label>
-        <input type="text" id="categoria" placeholder="Ex: funcionários, Produtos, loja ">
-      </div>
-      <div>
-        <label for="tipo">Tipo</label>
-        <select id="tipo">
-          <option>Despesa</option>
-          <option>Receita</option>
-        </select>
-      </div>
-      <button  id="catcomercial"  type="submit">Adicionar Categoria comercial</button>
+      <label for="categoria">Nome da categoria comercial:</label>
+      <input  type="text" id="categoria" placeholder="Ex: funcionários, Produtos, loja ">
+      <label for="tipo">Tipo:</label>
+      <select id="tipo">
+        <option>Despesa</option>
+        <option>Receita</option>
+      </select>
     </form>
-
+    <button id="catcomercial" type="submit">Adicionar Categoria comercial</button>
     <h3>Minhas Categorias</h3>
     <ul>
       <li>Aluguel loja <span class="tipo">(Despesa)</span></li>
@@ -64,7 +51,6 @@
     </ul>
   </div>
   </div>
-  </div>
-    <button  id="voltar"  type="submit">voltar</button>
+  <button id="voltar" type="submit">voltar</button>
 </body>
 </html>
