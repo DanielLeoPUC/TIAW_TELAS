@@ -3,13 +3,32 @@
         background-color: #fff;
  }
 
- #header {
+header {
      padding: 18px 20px;
      border-bottom: 8px solid #f06616;
-     /* A cor da linha*/
      background: linear-gradient(90deg, rgba(100, 100, 100, 0.795), rgba(153, 153, 153, 0.897));
-
+     margin: 10px;
+     color: #fff;
  }
+ .logo { 
+  width: 80px;
+  height:80px;
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 6px 16px rgba(255,111,160,0.18);
+}
+
+.logo img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.title { 
+  font-size:50px; 
+  font-weight:700; 
+}
 
  h2 {
      color: #e9e4e4;

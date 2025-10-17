@@ -48,6 +48,7 @@ html,body {
   top:0;
   z-index:20;
   margin: 20px;
+  color: white;
 }
 .logo { 
   width: 80px;
@@ -63,13 +64,6 @@ html,body {
   object-fit:cover;
   display:block;
 }
-
-.title { 
-  font-size:50px; 
-  font-weight:700; 
-}
-
-.header 
 
 .actions {
    margin-left:auto; 
