@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Minhas Metas - Mockup</title>
+  <link rel="stylesheet" href="css/metas.css">
+</head>
+<body>
+  <!-- Cada "page" agora é uma tela full (overlay). Apenas a ativa fica visível, e impede o erro lá-->
+  <div id="page1" class="page full active" aria-hidden="false" role="application" aria-label="Minhas Metas - Principal">
+    <header class="header">
+      <div class="logo">
+         <img src="/images/logo.jpeg" alt="Logo" />
+     </div>
+      <div class="title">Minhas Metas</div>
+      <div class="actions">
+        <button class="btn" id="btnNovaMetaTop">+ Nova Meta</button>
+      </div>
+    </header>
+
+    <main class="content page-inner-split">
+      <div class="left-area">
+        <h3>Visão geral</h3>
+        <p class="muted">Resumo das metas criadas</p>
+
+        <div id="listaMetas" class="lista-metas">
+          <div class="muted">Nenhuma meta criada ainda. Clique em + Nova meta para começar.</div>
+        </div>
+      </div>
+
+      <aside class="right-card">
+        <div class="tip-card">
+          <div class="tip-title">Dica</div>
+          <div class="muted">Adicione metas com prazo e um valor para acompanhar seu progresso.</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <div id="page2" class="page full" aria-hidden="true" role="dialog" aria-label="Criar ou Editar Meta">
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo.jpeg" alt="Logo" />
+      </div>
+      <div class="title">Minhas Metas</div>
+      <div class="actions">
+        <button class="btn secondary" id="btnFecharPage2">Fechar</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <h3>Criar / Editar Meta</h3>
+      <p class="muted">Preencha as informações da meta e clique em Salvar.</p>
+
+      <div class="form" id="formArea" aria-label="Formulário de meta">
+        <div class="full">
+          <label for="nomeMeta">Nome</label>
+          <input id="nomeMeta" type="text" placeholder="Ex: Viagem para Gramado" />
+        </div>
+
+        <div class="half">
+          <label for="valorMeta">Valor desejado (R$)</label>
+          <input id="valorMeta" type="number" placeholder="0.00" step="0.01" />
+        </div>
+
+        <div class="half">
+          <label for="valorObtido">Valor obtido (R$)</label>
+          <input id="valorObtido" type="number" placeholder="0.00" step="0.01" />
+        </div>
+
+        <div class="half">
+          <label for="tipoMeta">Tipo de meta</label>
+          <select id="tipoMeta">
+            <option value="Compras">Compras</option>
+            <option value="Reforma">Reforma</option>
+            <option value="outro">Viagem</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="half">
+          <label for="tempoInicial">Tempo inicial</label>
+          <input id="tempoInicial" type="date" />
+        </div>
+
+        <div class="half">
+          <label for="tempoFinal">Tempo final</label>
+          <input id="tempoFinal" type="date" />
+        </div>
+
+        <div class="full">
+          <label for="fotoMeta">Foto da meta</label>
+        <div class="foto-row">
+            <div id="fotoPreview" class="foto-preview">IMAGEM</div>
+            <div style="flex:1;">
+              <input id="fotoMeta" type="file" accept="image/*">
+              <div class="muted" style="margin-top:8px;">Escolha uma imagem para a meta; ficará visível na lista e no detalhe.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="full controls-row">
+          <button class="btn secondary" id="btnMudarFoto">Mudar foto</button>
+          <button class="btn" id="btnSalvar">Salvar</button>
+          <button class="btn secondary" id="btnCancelar">Cancelar</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="page3" class="page full" aria-hidden="true" role="dialog" aria-label="Resumo da Meta">
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo.jpeg" alt="Logo" />
+      </div>
+      <div class="title">Minhas Metas</div>
+      <div class="actions">
+        <button class="btn secondary" id="btnFecharPage3">Fechar</button>
+      </div>
+    </header>
+
+    <main class="content page-inner-split">
+      <div class="left-area">
+        <h3>Meta criada</h3>
+        <p class="muted">Aqui aparecem os detalhes resumidos da meta que você acabou de salvar.</p>
+
+        <div id="metaResumoArea" style="margin-top:12px;"></div>
+
+        <div style="margin-top:14px;">
+          <button class="btn secondary" id="btnVoltarList">Voltar</button>
+          <button class="btn" id="btnNovaMetaFrom3">+ Nova meta</button>
+        </div>
+      </div>
+
+      <aside class="right-card">
+        <div class="tip-card">
+          <div class="tip-title">Resumo</div>
+          <div class="muted">Passe o mouse sobre uma meta para destacar; clique para ver todos os detalhes.</div>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <div id="page4" class="page full" aria-hidden="true" role="dialog" aria-label="Detalhes da Meta">
+    <header class="header">
+      <div class="logo">
+        <img src="/images/logo.jpeg" alt="Logo" />
+      </div>
+      <div class="title">Minhas Metas</div>
+      <div class="actions">
+        <button class="btn secondary" id="btnFecharDetail">Fechar</button>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="only-detail" id="onlyDetailArea"></div>
+    </main>
+  </div>
+
+  <!-- Modal de confirmação -->
+  <div class="modal-backdrop" id="modalBackdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document">
+      <h3>Tem certeza que deseja excluir esta meta?</h3>
+      <div class="muted">Esta ação não poderá ser desfeita.</div>
+      <div class="choices">
+        <button class="btn secondary" id="modalCancelar">Cancelar</button>
+        <button class="btn" id="modalConfirmar">Excluir</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

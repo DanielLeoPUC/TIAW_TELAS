@@ -1,56 +1,100 @@
+</html>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/catfinanceiras.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Bootstrap primeiro, depois CSS custom -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/catfinanceiras.css" />
   <title>Categorias Financeiras</title>
-
 </head>
 
 <body>
-  <div class="container-principal">
-  <div class="container" id="pessoal">
-    <h2> Categorias pessoais</h2>
-    <form>
-      <label class="nomeCat" for="categoria">Nome da categoria pessoal:</label>
-      <input type="text" id="categoria" placeholder="Ex: Alimentação, Transporte, Salário">
-      <label for="tipo">Tipo</label>
-      <select id="tipo">
-        <option>Despesa</option>
-        <option>Receita</option>
-      </select>
-    </form>
-    <button id="catpessoal" type="submit">Adicionar Categoria pessoal:</button>
-    <h3>Minhas Categorias</h3>
-    <ul>
-      <li>Alimentação <span class="tipo">(Despesa)</span></li>
-      <li>Salário <span class="tipo">(Receita)</span></li>
-      <li>Transporte <span class="tipo">(Despesa)</span></li>
-    </ul>
-  </div>
+  <header class="bg-light py-3 mb-4" id="header">
+    <div class="container d-flex align-items-center">
+      <img src="images/logo.jpeg" alt="Logo" style="height:48px; width:auto;">
+      <h1 class="ms-3 h4 mb-0">Contas</h1>
+    </div>
+  </header>
 
-  <div class="container" id="comercial">
-    <h2> Categorias Comerciais</h2>
-    <form>
-      <label for="categoria">Nome da categoria comercial:</label>
-      <input  type="text" id="categoria" placeholder="Ex: funcionários, Produtos, loja ">
-      <label for="tipo">Tipo:</label>
-      <select id="tipo">
-        <option>Despesa</option>
-        <option>Receita</option>
-      </select>
-    </form>
-    <button id="catcomercial" type="submit">Adicionar Categoria comercial</button>
-    <h3>Minhas Categorias</h3>
-    <ul>
-      <li>Aluguel loja <span class="tipo">(Despesa)</span></li>
-      <li>Funcionários<span class="tipo">(Receita)</span></li>
-      <li>Produtos <span class="tipo">(Despesa)</span></li>
-    </ul>
-  </div>
-  </div>
-  <button id="voltar" type="submit">voltar</button>
+  <main class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title h5">Categorias Pessoais</h2>
+
+            <form id="form-pessoal" class="mb-3" onsubmit="return false;">
+              <div class="mb-2">
+                <label for="categoria-pessoal" class="form-label">Nome da categoria pessoal</label>
+                <input type="text" id="categoria-pessoal" class="form-control" placeholder="Ex: Alimentação, Transporte, Salário">
+              </div>
+              <div class="mb-2">
+                <label for="tipo-pessoal" class="form-label">Tipo</label>
+                <select id="tipo-pessoal" class="form-select">
+                  <option>Despesa</option>
+                  <option>Receita</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="data-pessoal" class="form-label">Data</label>
+                <input type="date" id="data-pessoal" class="form-control">
+              </div>
+
+              <button id="catpessoal" type="button" >Adicionar Categoria pessoal</button>
+            </form>
+
+            <h3 class="h6">Minhas Categorias</h3>
+            <ul id="pessoal-list" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h2 class="card-title h5">Categorias Comerciais</h2>
+
+            <form id="form-comercial" class="mb-3" onsubmit="return false;">
+              <div class="mb-2">
+                <label for="categoria-comercial" class="form-label">Nome da categoria comercial</label>
+                <input type="text" id="categoria-comercial" class="form-control" placeholder="Ex: Funcionários, Produtos, Loja">
+              </div>
+              <div class="mb-2">
+                <label for="tipo-comercial" class="form-label">Tipo</label>
+                <select id="tipo-comercial" class="form-select">
+                  <option>Despesa</option>
+                  <option>Receita</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="data-comercial" class="form-label">Data</label>
+                <input type="date" id="data-comercial" class="form-control">
+              </div>
+
+              <button id="catcomercial" type="button" >Adicionar Categoria comercial</button>
+            </form>
+
+            <h3 class="h6">Minhas Categorias</h3>
+            <ul id="comercial-list" class="list-group"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <a id="voltar" href="#" class="btn btn-secondary">Voltar</a>
+    </div>
+  </main>
+
+  <!-- Bootstrap JS (opcional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- script da aplicação: defer para garantir DOM pronto -->
+  <script src="js/catfinanceiras.js" defer></script>
 </body>
+
 </html>
