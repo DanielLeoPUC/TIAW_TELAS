@@ -1,17 +1,21 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #406449f5;
+    background-color: #fff;
 }
-
+header {
+     padding: 18px 20px;
+     border-bottom: 8px solid #f06616;
+     background: linear-gradient(90deg, rgba(100, 100, 100, 0.795), rgba(153, 153, 153, 0.897));
+     margin: 10px;
+     color: #fff;
+ }
 
 .bloco {
     background-color: #f0f0f0;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-     margin: 20px;
+    margin: 20px;
     padding: 20px;
-    height: 100%;
-
 }
 
 .form-group {
@@ -20,7 +24,8 @@ body {
 
 input {
     display: block;
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     font-weight: bold;
     margin-bottom: 5px;
     padding: 10px;
@@ -29,12 +34,51 @@ input {
 }
 
 button {
-    background: #E53935;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 10px;
+     width: 150px;
+     margin: 10px;
+     border: none;
+     padding: 5px ;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     box-shadow: 0 6px 12px rgba(255, 111, 160, 0.18);
+     color: white;
+     padding: 10px ;
+ }
+
+.Cancelar  {
+    background-color: #f15010;
+}
+.Alterar {
+    background-color: #e25808e8;
+}
+.Adicionar {
+    background-color: #1fa15a;
+}
+.excluir {
+    background-color: #d41010;
+}
+
+.sair {
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
+  background-color: #d41010;
+  margin: 20px;
+  float: right;
+}
+
+.Cancelar:hover  {
+    background-color: #f15010b0;
+}
+.Adicionar:hover {
+    background-color: #1fa159a6;
+}
+.Alterar:hover {
+    background-color: #e25808a1;
+}
+
+.sair:hover {
+ background-color: #d410109d;
 }
 
 table {
@@ -44,8 +88,10 @@ table {
 }
 
 th {
-    background-color: rgba(37, 121, 65, 0.863);
+    background-color: #f06616;
     width: 300px;
+    color: #fff;
+    white-space: nowrap;
 }
 
 td {
@@ -64,3 +110,4 @@ td {
 #voltar:hover {
     background-color: #d8311b;
 }
+

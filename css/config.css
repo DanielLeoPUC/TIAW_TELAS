@@ -77,6 +77,11 @@ button {
   float: right;
 
 }
+#excluir {
+
+  background-color: #d41010;
+}
+
 
 .deletar:hover{
     background-color: #d41010b7;
@@ -94,4 +99,9 @@ button {
 
  background-color: #d410109d;
 }
+#excluir:hover {
+
+  background-color: #d41010b6;
+}
+
 
