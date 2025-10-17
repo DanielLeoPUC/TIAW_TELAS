@@ -45,49 +45,53 @@ body {
   border-radius: 8px;
 }
 
-/* buttons defaults */
-.btn {
-  border-radius: 8px;
-  font-weight: 600;
+button {
+     width: 120px;
+     margin: 10px;
+     color: #fff;
+     border: none;
+     padding: 5px ;
+     border-radius: 10px;
+     font-weight: 600;
+     cursor: pointer;
+     box-shadow: 0 6px 12px rgba(255, 111, 160, 0.18);
+ }
+
+.deletar{
+    background-color: #d41010;
+
+}
+.cancelar  {
+    background-color: #f15010;
+}
+.salvar {
+    background-color: #1fa15a;
+
 }
 
-/* custom colors */
-#salvar-info,
-#salvar-email,
-#salvar-senha {
-  background: var(--primario);
-  color: #fff;
-  border: none;
-}
-
-#cancelar-info,
-#cancelar-email,
-#cancelar-senha {
-  background: #6c757d;
-  color: #fff;
-  border: none;
-}
-
-/* logout button style */
-#sair-conta {
+#sair {
   border-radius: 8px;
   border: 1px solid rgba(0,0,0,0.08);
+  background-color: #d41010;
+  margin: 20px;
+  float: right;
+
 }
 
-/* spacing adjustments inside cards */
-.card-body {
-  padding: 1.25rem;
+.deletar:hover{
+    background-color: #d41010b7;
+
+}
+.cancelar:hover  {
+    background-color: #f15010b0;
+}
+.salvar:hover {
+    background-color: #1fa159a6;
+
 }
 
+#sair:hover {
 
-@media (max-width: 576px) {
-  .profile-img { width: 80px; height: 80px; }
-  .card-body { padding: 1rem; }
+ background-color: #d410109d;
 }
 
-
-.form-control:focus,
-.btn:focus {
-  box-shadow: 0 0 0 0.15rem rgba(33,112,46,0.25);
-  outline: none;
-}
